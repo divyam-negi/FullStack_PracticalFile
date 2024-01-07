@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="colorSelect">Choose a color : </label>
+  <select id="colorSelect" onchange="changeTextColor()">
+    <option value="red">Red</option>
+    <option value="purple">Purple</option>
+  </select>
+  <p id="textToChange">the color of this text will change!</p>
+
+  <script>
+      function changeTextColor(){
+        var selectedColor=document.getElementById("colorSelect").value;
+        document.getElementById("textToChange").style.color=selectedColor;
+      }
+  </script>
+</body>
+</html>

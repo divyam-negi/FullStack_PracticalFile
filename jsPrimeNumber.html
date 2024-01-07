@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker!</title>
+    <script>
+        var userInput=prompt("enter a number to check prime or not: ");
+        if(userInput===null || userInput.trim()===''){
+            alert("invalid input!");
+        }
+        else{
+            var num=parseInt(userInput);
+            if(isNaN(num)){
+                alert("invalid input.please enter a valid input!");
+            }
+            else{
+                var isPrime=true;
+                for(var i=2;i<num;i++){
+                    if(num%i===0){
+                        isPrime=false;
+                        break;
+                    }
+                }
+                if(isPrime){
+                    alert("prime number!");
+                }
+                else{
+                    alert("not a prime number!");
+                }
+    
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

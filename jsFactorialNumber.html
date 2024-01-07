@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial checker!</title>
+    <script>
+        var inputUser=prompt("enter the number!");
+        var fact=1;
+        if(inputUser===0 || inputUser===1){
+            alert("factorial is : 1");
+        }
+        
+
+        else{
+            var num=parseInt(inputUser);
+            if(isNaN(num)){
+                alert("invalid input please enter a valid input!");
+            }
+            else{
+                for(var i=1;i<=num;i++){
+                    fact=fact*i;
+                }
+            }
+            alert("factorial is :" + fact);
+        }
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

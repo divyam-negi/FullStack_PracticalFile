@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <label for="username">enter your username: </label>
+  <input type="text" id="username" placeholder="username">
+  <br>
+  <br>
+
+  <button onclick="displayMessage()">Submit</button>
+  <p id="welcomeMessage"></p>
+
+  <script>
+    function displayMessage(){
+      var username=document.getElementById("username").value;
+      var welcomeMessageElement=document.getElementById("welcomeMessage");
+
+      if(username.trim()!==''){
+        welcomeMessageElement.textContent="welcome, " + username;
+        welcomeMessageElement.style.color='red';
+      }
+      else{
+        alert("please enter a username before clicking the submit button!");
+      }
+    }
+  </script>
+  
+</body>
+</html>
